@@ -1,0 +1,70 @@
+.type-in-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  scroll-margin: 6rem;
+}
+
+.type-in-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--paper-fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.type-in-field {
+  position: relative;
+  width: 100%;
+}
+
+.type-in-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0.75rem 1rem;
+  font-size: 1.15rem;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--paper-border);
+  background: var(--card-bg);
+  color: var(--paper-fg);
+  scroll-margin: 6rem;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.type-in-input:focus {
+  border-color: var(--ink);
+}
+
+.type-in-input:disabled {
+  opacity: 0.7;
+}
+
+.type-in-input.correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+  color: var(--correct);
+  padding-right: 2.75rem;
+}
+
+.type-in-input.wrong {
+  border-color: var(--wrong);
+  background: var(--wrong-bg);
+  color: var(--wrong);
+  padding-right: 2.75rem;
+}
+
+.type-in-status-icon {
+  position: absolute;
+  right: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.type-in-status-icon.correct {
+  color: var(--correct);
+}
+
+.type-in-status-icon.wrong {
+  color: var(--wrong);
+}

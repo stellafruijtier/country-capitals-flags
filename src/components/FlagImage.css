@@ -1,0 +1,16 @@
+.flag-image {
+  display: block;
+  height: auto;
+  border: 1.5px solid var(--paper-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.flag-image--large {
+  width: min(72vw, 260px);
+}
+
+.flag-image--medium {
+  width: 100%;
+  max-width: 120px;
+}

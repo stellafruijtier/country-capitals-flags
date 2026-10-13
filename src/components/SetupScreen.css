@@ -1,0 +1,80 @@
+.setup-screen {
+  width: 100%;
+  max-width: 560px;
+  padding: 1.75rem 1rem calc(2rem + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.setup-header {
+  text-align: center;
+}
+
+.setup-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--paper-fg);
+  margin: 0 0 0.3rem;
+  letter-spacing: 0.01em;
+}
+
+.setup-subtitle {
+  margin: 0;
+  color: var(--paper-fg-dim);
+  font-size: 1rem;
+}
+
+.setup-card {
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--paper-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field-group legend {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--paper-fg-dim);
+  margin-bottom: 0.6rem;
+  padding: 0;
+}
+
+.pill-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.choice-pill {
+  flex: 0 1 auto;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.1rem;
+}
+
+.field-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--paper-fg-dim);
+}
+
+.start-button {
+  width: 100%;
+  margin-top: 0.2rem;
+}

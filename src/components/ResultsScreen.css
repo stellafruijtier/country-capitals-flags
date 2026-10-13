@@ -1,0 +1,84 @@
+.results-screen {
+  width: 100%;
+  max-width: 560px;
+  padding: 2rem 1.25rem calc(2.5rem + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.result-emblem svg {
+  width: 56px;
+  height: 56px;
+}
+
+.result-emblem circle {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.results-score {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--paper-fg);
+  margin: 0;
+}
+
+.results-subtitle {
+  margin: 0;
+  color: var(--paper-fg-dim);
+  font-size: 1rem;
+}
+
+.misses-list {
+  width: 100%;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.miss-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--card-bg);
+  border: 1px solid var(--paper-border);
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.miss-item .flag-image--medium {
+  max-width: 56px;
+  flex-shrink: 0;
+}
+
+.miss-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.miss-name {
+  font-weight: 700;
+  color: var(--paper-fg);
+}
+
+.miss-capital {
+  font-size: 0.9rem;
+  color: var(--paper-fg-dim);
+}
+
+.results-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}

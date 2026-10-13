@@ -1,0 +1,120 @@
+.options-grid {
+  width: 100%;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.options-grid--text {
+  grid-template-columns: 1fr;
+}
+
+.options-grid--flags {
+  grid-template-columns: 1fr 1fr;
+}
+
+.option-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 52px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--paper-border);
+  background: var(--paper-bg-alt);
+  color: var(--paper-fg);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.options-grid--flags .option-button {
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.75rem 0.6rem 0.9rem;
+}
+
+.option-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--paper-border);
+  color: var(--paper-fg);
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.options-grid--flags .option-key {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.35rem;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+}
+
+.option-label {
+  flex: 1;
+}
+
+.option-status-icon {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.options-grid--flags .option-status-icon {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.35rem;
+  margin-left: 0;
+  background: var(--card-bg);
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.option-button.selected {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--ink-contrast);
+}
+
+.options-grid--flags .option-button.selected {
+  background: var(--paper-bg-alt);
+  color: var(--paper-fg);
+}
+
+.options-grid--flags .option-button.selected .option-key {
+  background: var(--ink);
+  color: var(--ink-contrast);
+}
+
+.option-button.correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+  color: var(--correct);
+}
+
+.option-button.wrong {
+  border-color: var(--wrong);
+  background: var(--wrong-bg);
+  color: var(--wrong);
+}
+
+.option-button.muted {
+  opacity: 0.55;
+}
+
+.option-button:disabled {
+  cursor: default;
+}
+
+.option-button:not(:disabled):hover {
+  border-color: var(--ink);
+}
